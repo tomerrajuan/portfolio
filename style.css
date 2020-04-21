@@ -7,11 +7,17 @@
 
 header {
     z-index: 10;
-  height: 10vh;
+  height: 9vh;
   width: 100vw;
-  background-color: rgb(238,226,216);
+      background-color: rgb(0, 0, 0, 0.6);
   display: flex;
   position: fixed;
+}
+header.on {
+      background-color: rgb(0, 0, 0, 0.75);
+}
+header.onmore {
+      background-color: rgb(0, 0, 0, 0.9);
 }
 header h1{
  color: white;
@@ -89,7 +95,7 @@ header h1{
 }
 
 #welcome {
-  height: 110vh;
+  height: 105vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -114,54 +120,72 @@ h3 {
 
 }
 #html5 {
-  opacity: 0.7;
+  opacity: 0.5;
   position: absolute;
-  margin-top: -20vh;
+  margin-top: -5vh;
   margin-left: 10vw;
 }
 #react {
+    opacity: 0.6;
+
     position: absolute;
-  margin-top: 10vh;
+  margin-top: 25vh;
   margin-left: 70vw;
 }
 #css {
-  opacity: 0.8;
+  opacity: 0.6;
   position: absolute;
-  margin-top: -15vh;
+  margin-top: -10vh;
   margin-left: 80vw;
 }
 #node {
+    opacity: 0.6;
+
     position: absolute;
-  margin-top: 20vh;
+  margin-top: 35vh;
   margin-left: 15vw;
   object-fit: fill;
 }
 #sql {
-  opacity: 0.8;
+  opacity: 0.6;
   position: absolute;
-  margin-top: -35vh;
+  margin-top: -30vh;
   margin-left: 30vw;
   object-fit: fill;
 }
 #javascript {
-  opacity: 0.9;
+  opacity: 0.6;
   position: absolute;
-  margin-top: -37vh;
+  margin-top: -32vh;
   margin-left: 70vw;
   object-fit: fill;
 }
 
 #about{
     display: flex;
+    flex-direction: column;
     height: 70vh;
     width: 100vw;
-     background-color: rgba(238,226,216,0.85);
-    justify-content: center;
+     background-color: rgb(251,248,245);
+     align-items: center;
 }
 #about h1{
-    color: white;
-    font-size: 4.4rem;
+    width: 35vw;
+    text-align: center;
+    border-bottom: 3px solid white;
+    color: rgb(61,61,61);
+
+    font-size: 4rem;
     margin-top: 4vh;
+    letter-spacing: 3px;
+}
+#about p{
+    width: 52vw;
+    letter-spacing: 1px;
+    color: rgb(61,61,61);
+
+    font-size: 2rem;
+    margin-top: 6vh;
 }
 #projects{
     display: flex;
