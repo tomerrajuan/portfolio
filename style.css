@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family:'Nunito';
+
+}
+
+header {
+    z-index: 10;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(238,226,216);
+  display: flex;
+  position: fixed;
+}
+header h1{
+ color: white;
+ align-self: center;
+ margin-left: 15px;
+ font-size: 2rem;
+ letter-spacing: 2px;
+}
+
+#hamburger {
+    position: fixed;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+  align-self: center;
+  right: 12px;
+  -webkit-tap-highlight-color: transparent;
+}
+.ham1,
+.ham2,
+.ham3 {
+  margin-bottom: 5px;
+  width: 45px;
+  height: 4px;
+  border-radius: 9px;
+  box-sizing: content-box;
+  background: transparent;
+  border: 3px solid white;
+}
+
+#hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: -50%;
+}
+#hamburger-menu.on {
+  visibility: visible;
+  transition-duration: 1s;
+  transform: translateX(-33%);
+}
+#menu {
+  position: absolute;
+  background: rgba(31, 31, 31, 0.9);
+  width: 170px;
+  height: 215px;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+  overflow: hidden;
+  border-radius: 3px;
+  visibility: hidden;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#menu li {
+  list-style: none;
+  margin-left: 5vw;
+  margin-bottom: 0.5vh;
+}
+#menu ul {
+  width: 20vw;
+  list-style: none;
+  padding-top: 4vh;
+}
+#menu a {
+  text-decoration: none;
+  font-size: 14px;
+  padding-top: 10px;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-weight: 700;
+  font: icon;
+}
+
+#welcome {
+  height: 110vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#profile_pic {
+  align-self: center;
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  margin-bottom: 2vh;
+}
+#welcome h1 {
+  font-size: 2rem;
+}
+#welcome h1,
+h3 {
+  margin-bottom: 1vh;
+  align-self: center;
+  color: rgb(61,61,61);
+  opacity: 0.8;
+
+}
+#html5 {
+  opacity: 0.7;
+  position: absolute;
+  margin-top: -20vh;
+  margin-left: 10vw;
+}
+#react {
+    position: absolute;
+  margin-top: 10vh;
+  margin-left: 70vw;
+}
+#css {
+  opacity: 0.8;
+  position: absolute;
+  margin-top: -15vh;
+  margin-left: 80vw;
+}
+#node {
+    position: absolute;
+  margin-top: 20vh;
+  margin-left: 15vw;
+  object-fit: fill;
+}
+#sql {
+  opacity: 0.8;
+  position: absolute;
+  margin-top: -35vh;
+  margin-left: 30vw;
+  object-fit: fill;
+}
+#javascript {
+  opacity: 0.9;
+  position: absolute;
+  margin-top: -37vh;
+  margin-left: 70vw;
+  object-fit: fill;
+}
+
+#about{
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+     background-color: rgba(238,226,216,0.85);
+    justify-content: center;
+}
+#about h1{
+    color: white;
+    font-size: 4.4rem;
+    margin-top: 4vh;
+}
+#projects{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+}
