@@ -1,195 +1,369 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family:'Nunito';
-
+  font-family: "Nunito";
 }
-
+.welcome {
+  width: 80vw;
+  height: 70vh;
+  border: 2px solid grey;
+}
 header {
-    z-index: 10;
+  z-index: 10;
   height: 9vh;
   width: 100vw;
-      background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.8);
   display: flex;
   position: fixed;
 }
 header.on {
-      background-color: rgb(0, 0, 0, 0.75);
+  transition-duration: 1s;
+  transform: translateY(-100%);
 }
-header.onmore {
-      background-color: rgb(0, 0, 0, 0.9);
-}
-header h1{
- color: white;
- align-self: center;
- margin-left: 15px;
- font-size: 2rem;
- letter-spacing: 2px;
-}
-
+/*
 #hamburger {
-    position: fixed;
+  margin-top: 2px;
+  position: fixed;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   overflow: hidden;
   align-self: center;
   right: 12px;
-  -webkit-tap-highlight-color: transparent;
 }
 .ham1,
 .ham2,
 .ham3 {
   margin-bottom: 5px;
-  width: 45px;
-  height: 4px;
+  width: 40px;
+  height: 3px;
   border-radius: 9px;
   box-sizing: content-box;
   background: transparent;
   border: 3px solid white;
-}
+} */
 
-#hamburger-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: -50%;
-}
-#hamburger-menu.on {
-  visibility: visible;
-  transition-duration: 1s;
-  transform: translateX(-33%);
-}
 #menu {
+  align-self: center;
+  display: flex;
   position: absolute;
-  background: rgba(31, 31, 31, 0.9);
-  width: 170px;
-  height: 215px;
-  top: 0;
-  right: 0;
-  padding-top: 20px;
-  overflow: hidden;
-  border-radius: 3px;
-  visibility: hidden;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-}
-#menu li {
-  list-style: none;
-  margin-left: 5vw;
-  margin-bottom: 0.5vh;
+
+  width: 100vw;
+  height: 50px;
 }
 #menu ul {
-  width: 20vw;
+  margin-left: 1vw;
+  align-self: center;
+  display: flex;
   list-style: none;
-  padding-top: 4vh;
+  width: 95vw;
+  justify-content: space-between;
 }
 #menu a {
+  justify-content: space-between;
+  letter-spacing: 2px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 22px;
   padding-top: 10px;
   font-family: "Quicksand", sans-serif;
   color: white;
   font-weight: 700;
-  font: icon;
+}
+#menu a:hover {
+  font-weight: 100;
 }
 
+.profile {
+  position: absolute;
+  align-self: center;
+  z-index: 9;
+  height: 50vh;
+  width: 50vw;
+}
+#profile_pic {
+  height: 19rem;
+  width: 19rem;
+  border-radius: 50%;
+  margin-bottom: 2vh;
+}
 #welcome {
-  height: 105vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-#profile_pic {
-  align-self: center;
-  height: 17rem;
-  width: 17rem;
-  border-radius: 50%;
-  margin-bottom: 2vh;
+  font-weight: 700;
+  color: rgb(61, 61, 61);
+  text-align: center;
 }
 #welcome h1 {
+  font-size: 4rem;
+}
+#welcome h3 {
   font-size: 2rem;
-}
-#welcome h1,
-h3 {
   margin-bottom: 1vh;
-  align-self: center;
-  color: rgb(61,61,61);
-  opacity: 0.8;
-
+  letter-spacing: 1px;
 }
-#html5 {
-  opacity: 0.5;
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+.logo {
+  margin-right: 12px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 42%;
+  opacity: 0.7;
+  border: 1px solid black;
+  padding: 0px 11px;
+  box-shadow: 1px 1px 1px 1px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+/* .image1 {
   position: absolute;
-  margin-top: -5vh;
+  margin-top: -15vh;
   margin-left: 10vw;
 }
-#react {
-    opacity: 0.6;
 
-    position: absolute;
-  margin-top: 25vh;
-  margin-left: 70vw;
-}
-#css {
-  opacity: 0.6;
+.image2 {
   position: absolute;
+
+  margin-top: 18vh;
+  margin-left: 75vw;
+}
+.image3 {
+  position: absolute;
+
   margin-top: -10vh;
   margin-left: 80vw;
 }
-#node {
-    opacity: 0.6;
+.image4 {
+  position: absolute;
 
-    position: absolute;
   margin-top: 35vh;
   margin-left: 15vw;
-  object-fit: fill;
 }
-#sql {
-  opacity: 0.6;
+.image5 {
   position: absolute;
+
+  margin-top: 30vh;
+  margin-left: 85vw;
+}
+.image6 {
+  position: absolute;
+
   margin-top: -30vh;
-  margin-left: 30vw;
-  object-fit: fill;
-}
-#javascript {
-  opacity: 0.6;
-  position: absolute;
-  margin-top: -32vh;
   margin-left: 70vw;
-  object-fit: fill;
+}
+.image7 {
+  position: absolute;
+
+  margin-top: -32vh;
+  margin-left: 20vw;
+}
+.image8 {
+  position: absolute;
+
+  margin-top: 10vh;
+  margin-left: 25vw;
+}
+.image9 {
+  position: absolute;
+
+  margin-top: 12vh;
+  margin-left: 5vw;
+} */
+#about {
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  width: 60vw;
+  margin-left: 20vw;
+  background-color: rgb(251, 248, 245);
+  align-items: center;
+}
+#about h1 {
+  width: 35vw;
+  text-align: center;
+  border-bottom: 2px solid rgb(61, 61, 61);
+  color: rgb(61, 61, 61);
+  font-size: 3rem;
+  margin-top: 4vh;
+  letter-spacing: 3px;
+}
+#about p {
+  width: 45vw;
+  letter-spacing: 1px;
+  color: rgb(61, 61, 61);
+  font-size: 1.5rem;
+  margin-top: 6vh;
 }
 
-#about{
+/* Projects section starts */
+#projects {
+    padding: 10vh 7vw 13vh 7vw;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: rgb(61, 61, 61);
+
+}
+#projects-header {
+color:rgb(61, 61, 61);
+  margin-bottom: 10vh;
+  font-size: 6rem;
+text-align: center;
+}
+#projects h2 {
+    font-size: 4rem;
+  margin-bottom: 5vh;
+
+}
+.project{
     display: flex;
     flex-direction: column;
-    height: 70vh;
-    width: 100vw;
-     background-color: rgb(251,248,245);
-     align-items: center;
+    align-self: center;
+    justify-content: space-around;
 }
-#about h1{
-    width: 35vw;
+
+.image_container:hover .learn-more{
+    z-index: 11;
+    transition-duration: 0.5s;
+    transform: translateY(-85px);
+    opacity: 1;
+}
+#project_img{
+    object-fit: fill;
+    border: 2px solid rgb(61, 61, 61);
+    height: 300px;
+    width: 400px;
+    border-radius: 15px;
+}
+.learn-more-white{
+    width: 400px;
+    height: 80px;
+    z-index: 100;
+    position:relative;
+    background: white;
+    margin-top: -80px;
+}
+.learn-more{
     text-align: center;
-    border-bottom: 3px solid white;
-    color: rgb(61,61,61);
-
-    font-size: 4rem;
-    margin-top: 4vh;
-    letter-spacing: 3px;
-}
-#about p{
-    width: 52vw;
-    letter-spacing: 1px;
-    color: rgb(61,61,61);
-
-    font-size: 2rem;
-    margin-top: 6vh;
-}
-#projects{
     display: flex;
-    height: 90vh;
-    width: 100vw;
     justify-content: center;
+    width: 400px;
+    height: 80px;
+    background: white;
+    opacity: 0;
+    border: 1px solid rgb(61, 61, 61);
 }
+
+#learn-more-button{
+    cursor: pointer;
+    color: rgb(61, 61, 61);
+    border-radius: 2px;
+    border: 1px solid rgb(61, 61, 61);
+    box-shadow: 1px 1px 1px 1px;
+    padding: 3px 10px;
+    font-size: 12px;
+    height: 25px;
+    align-self: center;
+}
+#learn-more-button:hover{
+    border: 1px solid black;
+    color: white;
+    font-size: 13px;
+    background-color: rgb(61, 61, 61);
+}
+/* Projects section ends */
+
+/* modal container */
+.modal-container {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+.modal-container.on{
+visibility: visible;
+}
+.modal-container-content{
+    width: 80vw;
+    height: 90vh;
+    background: white;
+    align-self: center;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+}
+#modal-container-close{
+    align-self: flex-end;
+    width: 44px;
+    font-size: 25px;
+    border-radius: 5px;
+    position: absolute;
+    border: 1px solid rgb(36,41,46);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px;
+}
+.modal-container h1{
+    font-size: 5rem;
+    margin-bottom: 3vh;
+}
+.modal-container-text{
+    margin-top: 3vh;
+    font-size: 19px;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+}
+.modal-container h3{
+    margin-top: 2vh;
+    font-size: 19px;
+
+}
+.modal-container p{
+    font-size: 1.2rem;
+    margin-bottom: 4vh;
+}
+.modal-container h4{
+    text-align: center;
+    margin-bottom: 1vh;
+}
+.modal-container a{
+
+color: rgb(36,41,46);
+}
+.fa-github:before {
+    content: "\f09b";
+    margin-left:30vw;
+    font-size: 60px;
+}
+.modal-container img{
+    object-fit: fill;
+    border: 2px solid rgb(36,41,46);
+    height: 300px;
+    width: 400px;
+    align-self: center;
+    border-radius: 15px;
+}
+/* Modal container end */
