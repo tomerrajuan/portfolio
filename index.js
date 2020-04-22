@@ -1,70 +1,87 @@
 (function() {
+  const x = document.getElementById("modal-container-close");
+  const learn_more_button = document.getElementById("learn-more-button");
 
-    const x = document.getElementById("modal-container-close");
-    const learn_more_button = document.getElementById("learn-more-button");
-
-    x.addEventListener("click", function(event) {
-        console.log("we are here");
+  x.addEventListener("click", function(event) {
+    console.log("we are here");
     $(".modal-container").removeClass("on");
-    });
+  });
 
-    learn_more_button.addEventListener("click", function() {
-        console.log("we are here");
+  learn_more_button.addEventListener("click", function() {
+    console.log("we are here");
     $(".modal-container").addClass("on");
-    });
+  });
 
+  $(document).ready(function() {
+    animateDiv(".image1");
+    animateDiv(".image2");
+    animateDiv(".image3");
+    animateDiv(".image4");
+    animateDiv(".image5");
+    animateDiv(".image6");
+    animateDiv(".image7");
+    animateDiv(".image8");
+    animateDiv(".image9");
+  });
 
+  function makeNewPosition() {
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(".profile").height() - 50;
+    var w = $(".profile").width() - 50;
 
-    // $(document).ready(function(){
-    //     animateDiv('.image1');
-    //     animateDiv('.image2');
-    //     animateDiv('.image3');
-    //     animateDiv('.image4');
-    //     animateDiv('.image5');
-    //     animateDiv('.image6');
-    //     animateDiv('.image7');
-    //     animateDiv('.image8');
-    //     animateDiv('.image9');
-    //
-    // });
-    //
-    // function makeNewPosition(){
-    //
-    //     // Get viewport dimensions (remove the dimension of the div)
-    //     var h = $(".profile").height()-50;
-    //     var w = $(".profile").width()-50;
-    //
-    //     var nh = Math.floor(Math.random() *  (h-500)+300);
-    //     var nw = Math.floor(Math.random() * (w-500)-100);
-    //
-    //     return [nh,nw];
-    //
-    // }
-    //
-    // function animateDiv(myclass){
-    //     var newq = makeNewPosition();
-    //     $(myclass).animate({ top: newq[0], left: newq[1] }, 9000, function(){
-    //       animateDiv(myclass);
-    //     });
-    //
-    // };
-    $(window).scroll(function(){
-            console.log(
-                $(window).height(),
-                $(document).scrollTop(),
-                $(document).height()
-            );
-            if (
-                $(document).scrollTop() >= 30
-            ) {
-                $("header").addClass("on");
+    var nh = Math.floor(Math.random() * (h - 500) + 310);
+    var nw = Math.floor(Math.random() * (w - 500) - 100);
 
-            }else  {
-                $("header").removeClass("on");
+    return [nh, nw];
+  }
 
-            }
+  function animateDiv(myclass) {
+    var newq = makeNewPosition();
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 3000, function() {
 
     });
+  }
+  // $(window).scroll(function() {
+  //   console.log(
+  //     $(window).height(),
+  //     $(document).scrollTop(),
+  //     $(document).height()
+  //   );
+  //   if ($(document).scrollTop() >= 30) {
+  //     $("header").addClass("on");
+  //   } else {
+  //     $("header").removeClass("on");
+  //   }
+  // });
+  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("header").offset().top > 100) {
+      $("header").addClass("navbar-shrink");
+    } else {
+      $("header").removeClass("navbar-shrink");
+    }
+  };
+  // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
 
 
+
+  $(window).scroll(function () {
+     var position = window.pageYOffset;
+     $('section').each(function () {
+       var target = $(this).offset().top;
+       console.log("position is",target);
+       var id = $(this).attr('id');
+       var navLinks = $('#navbar li a');
+       if (position >= target-300) {
+         navLinks.removeClass('active');
+         $('#navbar li a[href="#' + id + '"]').addClass('active');
+     } if(!position){
+  navLinks.removeClass("active");
+}
+
+     });
+  });
 })();
