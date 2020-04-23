@@ -1,6 +1,7 @@
 (function() {
   const x = document.getElementById("modal-container-close");
   const learn_more_button = document.getElementById("learn-more-button");
+  const welcome = document.getElementById("welcome");
 
   x.addEventListener("click", function(event) {
     console.log("we are here");
@@ -8,21 +9,20 @@
   });
 
   learn_more_button.addEventListener("click", function() {
-    console.log("we are here");
     $(".modal-container").addClass("on");
   });
 
-  $(document).ready(function() {
-    animateDiv(".image1");
-    animateDiv(".image2");
-    animateDiv(".image3");
-    animateDiv(".image4");
-    animateDiv(".image5");
-    animateDiv(".image6");
-    animateDiv(".image7");
-    animateDiv(".image8");
-    animateDiv(".image9");
+  welcome.addEventListener("mouseover", function(event) {
+      var target =$(event.target);
+      var id = target.attr('id');
+
+    console.log("we are at logo event", id);
+    animateDiv("#" + id);
+
   });
+
+
+
 
   function makeNewPosition() {
     // Get viewport dimensions (remove the dimension of the div)
@@ -37,7 +37,7 @@
 
   function animateDiv(myclass) {
     var newq = makeNewPosition();
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 3000, function() {
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 1000, function() {
 
     });
   }
@@ -81,7 +81,8 @@
      } if(!position){
   navLinks.removeClass("active");
 }
-
      });
   });
+
+
 })();

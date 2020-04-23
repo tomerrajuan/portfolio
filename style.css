@@ -3,13 +3,22 @@
   margin: 0;
   font-family: "Nunito";
 }
+.parallax {
+background-image: url("parallax.jpg");
+min-height: 700px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 15vh;
+}
 .welcome {
   width: 80vw;
   height: 70vh;
   border: 2px solid grey;
 }
 header {
-  z-index: 10;
+  z-index: 40;
   height: 11vh;
   width: 100vw;
 background-color: rgb(43,62,80);
@@ -26,7 +35,6 @@ header.on {
   align-self: center;
   display: flex;
   position: absolute;
-
   width: 100vw;
   height: 50px;
 }
@@ -46,12 +54,12 @@ header.on {
   padding-top: 10px;
   font-family: "Quicksand", sans-serif;
   color: white;
-  padding: 15px;
+  padding: 14px;
   border-radius: 12px;
   font-weight: 700;
 }
 .active {
-  background-color: rgba(26,188,156,0.8) !important;
+  background-color: rgba(186,76,99,0.8) !important;
 }
 .navbar-shrink{
     transition-duration: 1s;
@@ -64,11 +72,12 @@ header.on {
 .profile {
   position: absolute;
   align-self: center;
-  z-index: 9;
   height: 30vh;
-  width: 50vw;
+  width: 30vw;
+  z-index: 20;
 }
-#profile_pic {
+.profile_pic {
+    position: relative;
   height: 19rem;
   width: 19rem;
   border-radius: 50%;
@@ -92,98 +101,77 @@ header.on {
   margin-bottom: 1vh;
   letter-spacing: 1px;
 }
+/*
 .logos{
-    margin-top: 17vh;
     position: absolute;
     width: 100vw;
     height: 90vh;
 }
-.logo {
-  margin-right: 12px;
-  overflow: hidden;
-  background-color: white;
-  border-radius: 42%;
-  opacity: 0.7;
-  padding: 0px 11px;
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-.logo img {
+
+.logos img {
+    position: relative;
   width: 60px;
   height: 60px;
+  margin-right: 12px;
+  background-color: white;
+  opacity: 0.7;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  padding:10px;
+  border: 1px solid;
 }
-.image1 {
-    position: absolute;
-
-  margin-top: -15vh;
-  margin-left: 10vw;
+#image1 {
+margin-top: -10vh;
 }
 
-.image2 {
-  position: absolute;
-
-  margin-top: 18vh;
-  margin-left: 75vw;
-}
-.image3 {
-  position: absolute;
-
-  margin-top: -10vh;
-  margin-left: 80vw;
-}
-.image4 {
-  position: absolute;
-
-  margin-top: 35vh;
+#image2 {
+  margin-top: 42vh;
   margin-left: 15vw;
 }
-.image5 {
-  position: absolute;
-
-  margin-top: 30vh;
-  margin-left: 85vw;
+#image3 {
+  margin-top: -10vh;
+  margin-left: 15vw;
 }
-.image6 {
-  position: absolute;
-
-  margin-top: -30vh;
-  margin-left: 70vw;
-}
-.image7 {
-  position: absolute;
-
-  margin-top: -32vh;
-  margin-left: 20vw;
-}
-.image8 {
-  position: absolute;
-
-  margin-top: 10vh;
-  margin-left: 25vw;
-}
-.image9 {
-  position: absolute;
-
-  margin-top: 12vh;
+#image4 {
+  margin-top: 35vh;
   margin-left: 5vw;
 }
+#image5 {
+  margin-top: 30vh;
+  margin-left: 15vw;
+}
+#image6 {
+  margin-top: -5vh;
+  margin-left: 10vw;
+}
+#image7 {
+  margin-top: 16vh;
+  margin-left: 6vw;
+}
+#image8 {
+  margin-top: 15vh;
+  margin-left: 25vw;
+}
+#image9 {
+  margin-top: 32vh;
+  margin-left: 7vw;
+} */
 #about {
   margin-top: 10vh;
-  margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
-  height: 65vh;
+  height: 85vh;
   width: 100vw;
-  background-color: rgba(26,188,156,0.8);
+  background-color: rgb(238,238,238);
   align-items: center;
 }
 .about-box {
   width: 50vw;
-  height: 50vh;
+  height: 60vh;
   justify-content: center;
   background: white;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 #about h1 {
   width: 36vw;
