@@ -4,13 +4,13 @@
   font-family: "Nunito";
 }
 .parallax {
-background-image: url("parallax.jpg");
-min-height: 400px;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-margin-bottom: 15vh;
+  background-image: url("parallax.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 15vh;
 }
 .welcome {
   width: 80vw;
@@ -21,7 +21,7 @@ header {
   z-index: 40;
   height: 11vh;
   width: 100vw;
-background-color: rgb(43,62,80);
+  background-color: rgb(43, 62, 80);
 
   display: flex;
   position: fixed;
@@ -59,25 +59,26 @@ header.on {
   font-weight: 700;
 }
 .active {
-  background-color: rgba(186,76,99,0.8) !important;
+  background-color: rgba(186, 76, 99, 0.8) !important;
 }
-.navbar-shrink{
-    transition-duration: 1s;
-    height: 8vh;
+.navbar-shrink {
+  transition-duration: 1s;
+  height: 8vh;
 }
 #menu a:hover {
   font-weight: 100;
 }
 
 .profile {
-  position: absolute;
   align-self: center;
-  height: 30vh;
-  width: 30vw;
+  justify-content: center;
+  height: 70vh;
+      width: 80vw;
   z-index: 20;
+  margin-top: 35vh;
 }
 .profile_pic {
-    position: relative;
+  position: relative;
   height: 19rem;
   width: 19rem;
   border-radius: 50%;
@@ -163,7 +164,7 @@ margin-top: -10vh;
   flex-direction: column;
   height: 85vh;
   width: 100vw;
-  background-color: rgb(238,238,238);
+  background-color: rgb(238, 238, 238);
   align-items: center;
 }
 .about-box {
@@ -204,51 +205,50 @@ margin-top: -10vh;
   align-self: center;
 }
 #projects h2 {
-    font-size: 4rem;
-    margin-bottom: 8vh;
+  font-size: 4rem;
+  margin-bottom: 8vh;
 }
 .projects {
-    height: auto;
-    width: 80vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 4;
-    justify-content: space-evenly;
-    text-align: center;
-    color: rgb(61, 61, 61);
-    margin-left: 10vw;
-    justify-content: center;
+  height: auto;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 4;
+  justify-content: space-evenly;
+  text-align: center;
+  color: rgb(61, 61, 61);
+  margin-left: 10vw;
+  justify-content: center;
 }
 #project_img {
-    padding: 1px 1px;
-    object-fit: fill;
-    border: 2px solid black;
-    height: 240px;
-    width: 360px;
-    border-radius: 13px;
-    margin: 15px;
+  padding: 1px 1px;
+  object-fit: fill;
+  border: 2px solid black;
+  height: 240px;
+  width: 360px;
+  border-radius: 13px;
+  margin: 15px;
 }
 .learn-more {
-    text-align: center;
-    display: flex;
-    margin: 15px;
+  text-align: center;
+  display: flex;
+  margin: 15px;
 
-    justify-content: center;
-    width: 360px;
-    margin-top: -100px;
-    height: 80px;
-    border-radius: 6px;
-    background-color: rgba(186,76,99,0.9);
-    opacity: 0;
-    border: 1px solid rgb(61, 61, 61);
+  justify-content: center;
+  width: 360px;
+  margin-top: -100px;
+  height: 80px;
+  border-radius: 6px;
+  background-color: rgba(186, 76, 99, 0.9);
+  opacity: 0;
+  border: 1px solid rgb(61, 61, 61);
 }
 .image_container:hover .learn-more {
   z-index: 11;
-    opacity: 1;
-    position: relative;
-    transition-duration: 0.6s;
+  opacity: 1;
+  position: relative;
+  transition-duration: 0.6s;
 }
-
 
 .learn-more button {
   cursor: pointer;
@@ -263,7 +263,7 @@ margin-top: -10vh;
 .learn-more button:hover {
   color: white;
   font-size: 14px;
-  background-color: rgb(43,62,80);
+  background-color: rgb(43, 62, 80);
 }
 /* Projects section ends */
 
@@ -290,8 +290,7 @@ margin-top: -10vh;
 .modal-container3.on,
 .modal-container4.on,
 .modal-container5.on,
-.modal-container6.on
- {
+.modal-container6.on {
   visibility: visible;
 }
 .modal-container-content {
@@ -358,3 +357,98 @@ margin-top: -10vh;
   border-radius: 15px;
 }
 /* Modal container end */
+
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  #menu a {
+    font-size: 13px;
+    padding: 6px;
+  }
+  #menu ul{
+
+      margin-left: -2vw;
+  }
+  #navbar ul {
+    width: auto;
+    align-self: flex-end;
+  }
+
+  .navbar-shrink {
+    transition-duration: 1s;
+    height:13vh;
+  }
+  .profile {
+    height: auto;
+    width: auto;
+    margin-top: 8vh;
+  }
+  .image_container {
+    width: 90vw;
+    height: auto;
+  }
+  .learn-more {
+      display: none;
+  }
+  .profile_pic {
+    height: 14rem;
+    width: 14rem;
+  }
+  #welcome {
+    height: 77vh;
+  }
+  #welcome h1 {
+    font-size: 2rem;
+  }
+
+  #welcome h3 {
+    font-size: 1rem;
+  }
+  #about {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10vh 0;
+
+  }
+  .about-box {
+    width: 88vw;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-bottom: 4vh;
+  }
+  #about h1 {
+    width: 46vw;
+    align-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #about p {
+    width: 77vw;
+    margin-left: 5vw;
+    font-size: 14px;
+  }
+  .parallax {
+    min-height: 45vh;
+    margin-bottom: 9vh;
+  }
+  #projects-header {
+    font-size: 2rem;
+    margin-bottom: 4vh;
+  }
+  #project_img {
+    margin: 2vh 0;
+    height: 220px;
+    width: 310px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 400px) {
+    #project_img {
+      margin: 2vh 0;
+      height: 160px;
+      width: 260px;
+    }
+
+}
