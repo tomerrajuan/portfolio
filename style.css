@@ -462,9 +462,9 @@ input[type="submit"]:hover {
 #sendMessageButton {
   color: #444444;
   background: #f3f3f3;
-  border: 2px #dadada solid;
+  border: 2px rgba(186, 76, 99, 0.8) solid;
   padding: 8px 16px;
-  border-radius: 2px;
+  border-radius: 5px;
   font-weight: bold;
   font-size: 11pt;
   margin-top: 5px;
