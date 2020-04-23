@@ -424,6 +424,8 @@ margin-top: -10vh;
 input,
 select,
 textarea {
+    font-size: 14px;
+    height: 50px;
   border: 1px solid grey;
   width: 88%; /* Full width */
   padding: 12px; /* Some padding */
