@@ -5,7 +5,7 @@
 }
 .parallax {
 background-image: url("parallax.jpg");
-min-height: 700px;
+min-height: 400px;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -193,92 +193,89 @@ margin-top: -10vh;
 }
 
 /* Projects section starts */
-.projects {
-  padding: 10vh 12vw 13vh 12vw;
-  height: auto;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 4;
-  justify-content: space-evenly;
-  text-align: center;
-  color: rgb(61, 61, 61);
-}
 #projects-header {
   color: rgb(61, 61, 61);
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
-}
-#projects h2 {
-  font-size: 4rem;
-  margin-bottom: 5vh;
 }
 .project {
   display: flex;
   flex-direction: column;
   align-self: center;
-  justify-content: space-around;
 }
-
-.image_container:hover .learn-more {
-  z-index: 11;
-  transition-duration: 0.5s;
-  transform: translateY(-85px);
-  opacity: 1;
+#projects h2 {
+    font-size: 4rem;
+    margin-bottom: 8vh;
+}
+.projects {
+    height: auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    justify-content: space-evenly;
+    text-align: center;
+    color: rgb(61, 61, 61);
+    margin-left: 10vw;
+    justify-content: center;
 }
 #project_img {
-  padding: 1px 1px;
-  object-fit: fill;
-  border: 2px solid black;
-  height: 240px;
-  width: 360px;
-  border-radius: 13px;
-}
-.learn-more-white {
+    padding: 1px 1px;
+    object-fit: fill;
+    border: 2px solid black;
+    height: 240px;
     width: 360px;
-
-  height: 80px;
-  z-index: 100;
-  position: relative;
-  background: white;
-  margin-top: -80px;
+    border-radius: 13px;
+    margin: 15px;
 }
 .learn-more {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  width: 360px;
+    text-align: center;
+    display: flex;
+    margin: 15px;
 
-  height: 80px;
-  border-radius: 6px;
-  background: white;
-  opacity: 0;
-  border: 1px solid rgb(61, 61, 61);
+    justify-content: center;
+    width: 360px;
+    margin-top: -100px;
+    height: 80px;
+    border-radius: 6px;
+    background-color: rgba(186,76,99,0.9);
+    opacity: 0;
+    border: 1px solid rgb(61, 61, 61);
+}
+.image_container:hover .learn-more {
+  z-index: 11;
+    opacity: 1;
+    position: relative;
+    transition-duration: 0.6s;
 }
 
-#learn-more-button {
+
+.learn-more button {
   cursor: pointer;
   color: rgb(61, 61, 61);
   border-radius: 2px;
   border: 1px solid rgb(61, 61, 61);
-  box-shadow: 1px 1px 1px 1px;
   padding: 3px 10px;
-  font-size: 12px;
+  font-size: 13px;
   height: 25px;
   align-self: center;
 }
-#learn-more-button:hover {
-  border: 1px solid black;
+.learn-more button:hover {
   color: white;
-  font-size: 13px;
-  background-color: rgb(61, 61, 61);
+  font-size: 14px;
+  background-color: rgb(43,62,80);
 }
 /* Projects section ends */
 
 /* modal container */
-.modal-container {
+.modal-container1,
+.modal-container2,
+.modal-container3,
+.modal-container4,
+.modal-container5,
+.modal-container6 {
   position: fixed;
-  z-index: 200;
+  z-index: 50;
   left: 0;
   top: 0;
   height: 100%;
@@ -288,7 +285,13 @@ margin-top: -10vh;
   flex-direction: column;
   visibility: hidden;
 }
-.modal-container.on {
+.modal-container1.on,
+.modal-container2.on,
+.modal-container3.on,
+.modal-container4.on,
+.modal-container5.on,
+.modal-container6.on
+ {
   visibility: visible;
 }
 .modal-container-content {
@@ -302,19 +305,22 @@ margin-top: -10vh;
   padding: 10px;
   border-radius: 15px;
 }
-#modal-container-close {
+.modal-container-content button {
   align-self: flex-end;
   width: 44px;
   font-size: 25px;
   border-radius: 5px;
   position: absolute;
+  z-index: 200;
   border: 1px solid rgb(36, 41, 46);
   cursor: pointer;
   box-shadow: 1px 1px 1px;
 }
-.modal-container h1 {
+.modal-container-content h1 {
   font-size: 5rem;
   margin-bottom: 3vh;
+  width: 30vw;
+  align-self: center;
 }
 .modal-container-text {
   margin-top: 3vh;
@@ -323,19 +329,19 @@ margin-top: -10vh;
   text-align: left;
   margin-left: 10%;
 }
-.modal-container h3 {
+.modal-container-content h3 {
   margin-top: 2vh;
   font-size: 19px;
 }
-.modal-container p {
+.modal-container-content p {
   font-size: 1.2rem;
   margin-bottom: 4vh;
 }
-.modal-container h4 {
+.modal-container-content h4 {
   text-align: center;
   margin-bottom: 1vh;
 }
-.modal-container a {
+.modal-container-content a {
   color: rgb(36, 41, 46);
 }
 .fa-github:before {
@@ -343,7 +349,7 @@ margin-top: -10vh;
   margin-left: 30vw;
   font-size: 60px;
 }
-.modal-container img {
+.modal-container-content img {
   object-fit: fill;
   border: 2px solid rgb(36, 41, 46);
   height: 300px;
