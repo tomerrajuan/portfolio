@@ -1,4 +1,5 @@
 (function() {
+
   const x1 = document.getElementById("modal-container-close1");
   const x2 = document.getElementById("modal-container-close2");
   const x3 = document.getElementById("modal-container-close3");
@@ -59,7 +60,6 @@
     console.log("we are here");
     $(".modal-container6").removeClass("on");
   });
-
   welcome.addEventListener("mouseover", function(event) {
     var target = $(event.target);
     var id = target.attr("id");
@@ -69,6 +69,7 @@
   });
 
   function makeNewPosition() {
+
     // Get viewport dimensions (remove the dimension of the div)
     var h = $(".profile").height() - 50;
     var w = $(".profile").width() - 50;
@@ -81,7 +82,7 @@
 
   function animateDiv(myclass) {
     var newq = makeNewPosition();
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 1000, function() {});
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 500, function() {});
   }
   // $(window).scroll(function() {
   //   console.log(
