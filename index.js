@@ -5,13 +5,11 @@
   const x3 = document.getElementById("modal-container-close3");
   const x4 = document.getElementById("modal-container-close4");
   const x5 = document.getElementById("modal-container-close5");
-  const x6 = document.getElementById("modal-container-close6");
   const learn_more_button1 = document.getElementById("learn-more-button1");
   const learn_more_button2 = document.getElementById("learn-more-button2");
   const learn_more_button3 = document.getElementById("learn-more-button3");
   const learn_more_button4 = document.getElementById("learn-more-button4");
   const learn_more_button5 = document.getElementById("learn-more-button5");
-  const learn_more_button6 = document.getElementById("learn-more-button6");
 
   const welcome = document.getElementById("welcome");
 
@@ -31,9 +29,7 @@
   learn_more_button5.addEventListener("click", function() {
     $(".modal-container5").addClass("on");
   });
-  learn_more_button6.addEventListener("click", function() {
-    $(".modal-container6").addClass("on");
-  });
+
 
   x1.addEventListener("click", function() {
     console.log("we are here");
@@ -56,10 +52,7 @@
 
     $(".modal-container5").removeClass("on");
   });
-  x6.addEventListener("click", function() {
-    console.log("we are here");
-    $(".modal-container6").removeClass("on");
-  });
+
   welcome.addEventListener("mouseover", function(event) {
     var target = $(event.target);
     var id = target.attr("id");

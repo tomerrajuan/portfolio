@@ -104,7 +104,7 @@ header.on {
   letter-spacing: 1px;
 }
 
-.logos{
+/* .logos{
     position: absolute;
     width: 100vw;
     height: 90vh;
@@ -160,7 +160,7 @@ margin-top: -10vh;
 #image9 {
   margin-top: 32vh;
   margin-left: 7vw;
-}
+} */
 #about {
   display: flex;
   flex-direction: column;
@@ -277,8 +277,7 @@ margin-top: -10vh;
 .modal-container2,
 .modal-container3,
 .modal-container4,
-.modal-container5,
-.modal-container6 {
+.modal-container5{
   position: fixed;
   z-index: 50;
   left: 0;
@@ -294,8 +293,7 @@ margin-top: -10vh;
 .modal-container2.on,
 .modal-container3.on,
 .modal-container4.on,
-.modal-container5.on,
-.modal-container6.on {
+.modal-container5.on{
   visibility: visible;
 }
 .modal-container-content {
@@ -321,7 +319,7 @@ margin-top: -10vh;
   box-shadow: 1px 1px 1px;
 }
 .modal-container-content h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 3vh;
   width: 30vw;
   align-self: center;
