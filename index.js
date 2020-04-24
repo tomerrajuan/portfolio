@@ -10,11 +10,10 @@
   const learn_more_button3 = document.getElementById("learn-more-button3");
   const learn_more_button4 = document.getElementById("learn-more-button4");
   const learn_more_button5 = document.getElementById("learn-more-button5");
-
   const welcome = document.getElementById("welcome");
 
   learn_more_button1.addEventListener("click", function() {
-      console.log("we are here");
+    console.log("we are here");
     $(".modal-container1").addClass("on");
   });
   learn_more_button2.addEventListener("click", function() {
@@ -29,7 +28,6 @@
   learn_more_button5.addEventListener("click", function() {
     $(".modal-container5").addClass("on");
   });
-
 
   x1.addEventListener("click", function() {
     console.log("we are here");
@@ -61,22 +59,27 @@
     animateDiv("#" + id);
   });
 
-  function makeNewPosition() {
+  $(document).ready(function() {
+      console.log("happening");
+    $("#my-name").addClass("right");
+    $("#full-stack").addClass("left");
+  });
 
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(".profile").height() - 50;
-    var w = $(".profile").width() - 50;
-
-    var nh = Math.floor(Math.random() * (h - 500) + 310);
-    var nw = Math.floor(Math.random() * (w - 500) - 100);
-
-    return [nh, nw];
-  }
-
-  function animateDiv(myclass) {
-    var newq = makeNewPosition();
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 500, function() {});
-  }
+  // function makeNewPosition() {
+  //   // Get viewport dimensions (remove the dimension of the div)
+  //   var h = $(".profile").height() - 50;
+  //   var w = $(".profile").width() - 50;
+  //
+  //   var nh = Math.floor(Math.random() * (h - 500) + 310);
+  //   var nw = Math.floor(Math.random() * (w - 500) - 100);
+  //
+  //   return [nh, nw];
+  // }
+  //
+  // function animateDiv(myclass) {
+  //   var newq = makeNewPosition();
+  //   $(myclass).animate({ top: newq[0], left: newq[1] }, 500, function() {});
+  // }
   // $(window).scroll(function() {
   //   console.log(
   //     $(window).height(),
@@ -91,7 +94,7 @@
   // });
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("header").offset().top > 100) {
+    if ($("header").offset().top > 3) {
       $("header").addClass("navbar-shrink");
     } else {
       $("header").removeClass("navbar-shrink");

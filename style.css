@@ -12,17 +12,13 @@
   background-size: cover;
   margin-bottom: 15vh;
 }
-.welcome {
-  width: 80vw;
-  height: 70vh;
-  border: 2px solid grey;
-}
+
 header {
   z-index: 40;
-  height: 11vh;
+  margin-top: -2vh;
+  height: 0;
   width: 100vw;
   background-color: rgb(43, 62, 80);
-
   display: flex;
   position: fixed;
 }
@@ -30,7 +26,16 @@ header.on {
   transition-duration: 1s;
   transform: translateY(-100%);
 }
+.navbar-shrink {
+margin-top: 1px;
+  transition-duration: 0.1s;
+  height:13vh;
+}
+.white{
+    background-color: rgb(238, 238, 238);
 
+    height: 8vh;
+}
 #menu {
   align-self: center;
   display: flex;
@@ -79,31 +84,44 @@ header.on {
 }
 .profile_pic {
   position: relative;
-  height: 19rem;
-  width: 19rem;
+  height: 12rem;
+  width: 12rem;
+  align-self: center;
   border-radius: 50%;
-  margin-bottom: 2vh;
+  margin: 0 3vw;
 }
 #welcome {
-  height: 100vh;
+justify-content: center;
+  height: 82vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-weight: 700;
   color: rgb(61, 61, 61);
-  text-align: center;
+ background-color: rgba(186, 76, 99, 0.5);
+}
+#my-name {
+    opacity: 0;
+    text-align: center;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+#full-stack {
+    opacity: 0;
+    text-align: center;
 
-}
-#welcome h1 {
-  font-size: 3.5rem;
-}
-#welcome h3 {
   font-size: 1.5rem;
-  margin-bottom: 1vh;
   letter-spacing: 1px;
 }
+.right{
+opacity: 1 !important;
+transition-duration: 2.5s;
+}
+.left{
+    transition-duration: 2.5s;
+    opacity: 1 !important;
 
+}
 /* .logos{
     position: absolute;
     width: 100vw;
@@ -164,17 +182,18 @@ margin-top: -10vh;
 #about {
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   align-items: center;
   background-color: rgb(238, 238, 238);
 }
 .about-box {
-  width: 40vw;
+
+  width: 800px;
   height: 40vh;
   justify-content: center;
   background: white;
-  margin-top: 10vh;
+  margin-top: 15vh;
   border-radius: 3px;
   display: flex;
 }
@@ -189,12 +208,11 @@ margin-top: -10vh;
   letter-spacing: 3px;
 }
 #about p {
-  width: 36vw;
-  justify-content: center;
-  letter-spacing: 1px;
-  color: rgb(61, 61, 61);
-  font-size: 1.3rem;
-  margin-top: 6vh;
+    width: 400px;
+    letter-spacing: 1px;
+    color: rgb(61, 61, 61);
+    font-size: 16px;
+    align-self: center;
 }
 
 /* Projects section starts */
@@ -379,9 +397,8 @@ margin-top: -10vh;
 }
 .skills-flex-item{
     text-align: center;
-    height: 5vh;
     width: 40vw;
-    margin: 10vh 0;
+    margin: 4vh 0;
 }
 .skills-flex-item h3{
     margin: 2vh 0;
@@ -513,9 +530,22 @@ align-self: center;
 font-size: 65px;
 color: white;
 }
+#fa-va-footer img:hover{
+margin-top: -1vh;
+}
+#fa-va-footer i:hover{
+    margin-top: -1vh;
+
+}
+.footer-links{
+    display: flex;
+}
 
 /* Footer  end */
-@media screen and (min-width: 200px) and (max-width: 800px) {
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    header{
+        height: 13vh;
+    }
   #menu a {
     font-size: 13px;
     padding: 6px;
@@ -529,10 +559,7 @@ color: white;
     align-self: flex-end;
   }
 
-  .navbar-shrink {
-    transition-duration: 1s;
-    height:13vh;
-  }
+
   .profile {
     height: auto;
     width: auto;
@@ -546,11 +573,12 @@ color: white;
       display: none;
   }
   .profile_pic {
-    height: 14rem;
-    width: 14rem;
+      margin-bottom: 20px;
+    height: 11rem;
+    width: 11rem;
   }
   #welcome {
-    height: 77vh;
+    height: 50vh;
   }
   #welcome h1 {
     font-size: 2rem;
@@ -559,22 +587,23 @@ color: white;
   #welcome h3 {
     font-size: 1rem;
   }
+  #skills{
+      padding: 3vh 0;
+  }
   #about {
-    margin-top: 10vh;
+      height: 500px;
     display: flex;
     flex-direction: column;
-    height: auto;
-    padding: 10vh 0;
-
   }
   .about-box {
-    width: 88vw;
-    height: auto;
+      margin-top: -20px;
+      height: 500px;
+      width: auto;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-self: center;
-    padding-bottom: 4vh;
+    margin-bottom: 4vh;
   }
   #about h1 {
     width: 46vw;
@@ -583,7 +612,7 @@ color: white;
     font-size: 1.5rem;
   }
   #about p {
-    width: 77vw;
+    width: 80%;
     margin-left: 5vw;
     font-size: 14px;
   }
@@ -600,6 +629,33 @@ color: white;
     height: 220px;
     width: 310px;
   }
+  #fa-va-footer{
+      height: 35vh;
+      margin-left: 0;
+      display: flex;
+flex-direction: column;
+  }
+  #fa-va-footer h1{
+      visibility:hidden;
+      width: 0;
+
+  }
+  #fa-va-footer p{
+     visibility:hidden;
+     width: 0;
+  }
+
+  #fa-va-footer img {
+      margin-left: 0;
+  }
+
+    #contact {
+      padding: 30px 1px;
+      margin-top: 2vh;
+      margin-bottom: 5vh;
+      width: 90vw;
+      margin-left: 7vw;
+    }
 }
 @media screen and (min-width: 200px) and (max-width: 400px) {
     #project_img {
