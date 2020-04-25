@@ -63,7 +63,7 @@
       console.log("happening");
     $("#my-name").addClass("right");
     $("#full-stack").addClass("left");
-    setTimeout(typeWriter,3500);
+    setTimeout(typeWriter,3900);
   });
 
 
