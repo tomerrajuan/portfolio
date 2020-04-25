@@ -196,17 +196,17 @@ header.on {
   margin: 15px;
 }
 .learn-more {
-  text-align: center;
-  display: flex;
-  margin: 15px;
-  justify-content: center;
-  width: 360px;
-  margin-top: -100px;
-  height: 80px;
-  border-radius: 6px;
-  background-color: rgba(186, 76, 99, 0.9);
-  opacity: 0;
-  border: 1px solid rgb(61, 61, 61);
+    text-align: center;
+        display: flex;
+        margin: 15px;
+        justify-content: center;
+        width: 360px;
+        margin-top: -260px;
+        height: 240px;
+        /* border-radius: 6px; */
+        background-color: rgba(186, 76, 99, 0.9);
+        opacity: 0;
+        border: 1px solid rgb(61, 61, 61);
 }
 .image_container:hover .learn-more {
   z-index: 11;
@@ -214,21 +214,18 @@ header.on {
   position: relative;
   transition-duration: 0.6s;
 }
-
-.learn-more button {
-  cursor: pointer;
-  color: rgb(61, 61, 61);
-  border-radius: 2px;
-  border: 1px solid rgb(61, 61, 61);
-  padding: 3px 10px;
-  font-size: 13px;
-  height: 25px;
-  align-self: center;
+ {
 }
-.learn-more button:hover {
+.learn-more i {
+  cursor: pointer;
+  padding: 3px 10px;
+  font-size: 60px;
+  align-self: center;
   color: white;
-  font-size: 14px;
-  background-color: rgb(43, 62, 80);
+}
+.learn-more i:hover {
+  font-size: 70px;
+color: rgba(43, 62, 80,0.8);
 }
 /* Projects section ends */
 
