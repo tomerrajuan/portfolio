@@ -191,10 +191,8 @@ header.on {
 }
 #project_img {
   object-fit: fill;
-  border: 2px solid rgb(61, 61, 61);
   height: 240px;
   width: 360px;
-  border-radius: 13px;
   margin: 15px;
 }
 .learn-more {
