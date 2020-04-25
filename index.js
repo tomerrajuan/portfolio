@@ -63,6 +63,9 @@
       console.log("happening");
     $("#my-name").addClass("right");
     $("#full-stack").addClass("left");
+    $("#about").addClass("blue");
+    $(".white").addClass("blue");
+
     setTimeout(typeWriter,3900);
   });
 

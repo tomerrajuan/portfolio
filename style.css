@@ -124,7 +124,10 @@ header.on {
   font-size: 2rem !important;
   opacity: 1 !important;
 }
-
+.blue{
+    transition-duration: 4s;
+    background-color: rgba(43, 62, 80,0.9) !important;
+}
 #about {
   display: flex;
   flex-direction: column;
@@ -225,7 +228,7 @@ header.on {
 }
 .learn-more i:hover {
   font-size: 70px;
-color: rgba(43, 62, 80,0.8);
+color: rgba(43, 62, 80,0.9);
 }
 /* Projects section ends */
 
