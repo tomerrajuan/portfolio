@@ -63,8 +63,21 @@
       console.log("happening");
     $("#my-name").addClass("right");
     $("#full-stack").addClass("left");
+    setTimeout(typeWriter,3500);
   });
 
+
+  var i = 0;
+  var txt = 'Full Stack Web Developer';
+  var speed = 70;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("full-stack").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
   // function makeNewPosition() {
   //   // Get viewport dimensions (remove the dimension of the div)
   //   var h = $(".profile").height() - 50;
