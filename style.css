@@ -90,7 +90,7 @@ header.on {
 }
 #welcome {
   justify-content: center;
-  height: 82vh;
+  height: 75vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
