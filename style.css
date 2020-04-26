@@ -279,8 +279,8 @@ color: rgba(43, 62, 80,0.9);
   box-shadow: 1px 1px 1px;
 }
 .modal-container-content h1 {
-  font-size: 3rem;
-  margin-bottom: 3vh;
+  font-size: 2.5rem;
+  margin-bottom: 2.5vh;
   width: 30vw;
   align-self: center;
 }
@@ -293,31 +293,41 @@ color: rgba(43, 62, 80,0.9);
 }
 .modal-container-content h3 {
   margin-top: 2vh;
-  font-size: 22px;
+  font-size: 19px;
 }
 .modal-container-content p {
-  font-size: 1.2rem;
-  margin-bottom: 4vh;
+  font-size: 1rem;
+  margin-bottom: 1vh;
 }
 .modal-container-content h4 {
-  text-align: center;
+    font-size: 1rem;
   margin-bottom: 1vh;
+  align-self: center;
+  text-align: center;
 }
 .modal-container-content a {
   color: rgb(36, 41, 46);
 }
 .fa-github:before {
   content: "\f09b";
-  margin-left: 30vw;
   font-size: 60px;
+  text-align: center;
+  margin-left: 15px;
 }
 .modal-container-content img {
   object-fit: fill;
   border: 2px solid rgb(36, 41, 46);
-  height: 300px;
-  width: 450px;
+  height: 38%;
+      width: 37%;
   align-self: center;
   border-radius: 15px;
+}
+.github{
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+        bottom: 6vh;
 }
 /* Modal container end */
 
@@ -343,7 +353,7 @@ color: rgba(43, 62, 80,0.9);
   margin: 6vh 0;
 }
 .skills-flex-item h3 {
-  margin: 2vh 0;
+  margin: 5px 0;
   padding-bottom: 1vh;
   border-bottom: 1px solid grey;
 }
