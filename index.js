@@ -66,9 +66,7 @@
     $("#about").addClass("blue");
     $(".white").addClass("blue");
 
-    setTimeout(typeWriter,3900);
   });
-
 
   var i = 0;
   var txt = 'Full Stack Web Developer';
@@ -81,6 +79,7 @@
       setTimeout(typeWriter, speed);
     }
   }
+  setTimeout(typeWriter,3900);
   // function makeNewPosition() {
   //   // Get viewport dimensions (remove the dimension of the div)
   //   var h = $(".profile").height() - 50;

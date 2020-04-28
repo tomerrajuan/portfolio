@@ -4,7 +4,8 @@
   font-family: "Nunito";
 }
 .white {
-  background-color: rgb(245, 247, 248);
+    background-color: rgba(43, 62, 80,0.9) !important;
+
   height: 10vh;
 }
 .parallax {
@@ -124,17 +125,15 @@ header.on {
   font-size: 2rem !important;
   opacity: 1 !important;
 }
-.blue{
-    transition-duration: 4s;
-    background-color: rgba(43, 62, 80,0.9) !important;
-}
+
 #about {
   display: flex;
   flex-direction: column;
   height: 70vh;
   width: 100vw;
   align-items: center;
-  background-color: rgb(245, 247, 248);
+  background-color: rgba(43, 62, 80,0.9) !important;
+
 }
 .about-box {
   width: 800px;
