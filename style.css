@@ -54,7 +54,7 @@ header.on {
   display: flex;
   list-style: none;
   width: 95vw;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #menu a {
   justify-content: space-between;
