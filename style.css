@@ -114,13 +114,13 @@ header.on {
   letter-spacing: 2px;
 }
 .right {
-  color: rgb(43, 62, 80) !important;
+  color: rgb(36,41,46) !important;
   opacity: 1 !important;
   font-size: 4.5rem !important;
   transition-duration: 4s;
 }
 .left {
-  color: rgb(43, 62, 80) !important;
+  color: rgb(36,41,46) !important;
   transition-duration: 4s;
   font-size: 2rem !important;
   opacity: 1 !important;
