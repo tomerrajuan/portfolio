@@ -80,34 +80,7 @@
     }
   }
   setTimeout(typeWriter,3900);
-  // function makeNewPosition() {
-  //   // Get viewport dimensions (remove the dimension of the div)
-  //   var h = $(".profile").height() - 50;
-  //   var w = $(".profile").width() - 50;
-  //
-  //   var nh = Math.floor(Math.random() * (h - 500) + 310);
-  //   var nw = Math.floor(Math.random() * (w - 500) - 100);
-  //
-  //   return [nh, nw];
-  // }
-  //
-  // function animateDiv(myclass) {
-  //   var newq = makeNewPosition();
-  //   $(myclass).animate({ top: newq[0], left: newq[1] }, 500, function() {});
-  // }
-  // $(window).scroll(function() {
-  //   console.log(
-  //     $(window).height(),
-  //     $(document).scrollTop(),
-  //     $(document).height()
-  //   );
-  //   if ($(document).scrollTop() >= 30) {
-  //     $("header").addClass("on");
-  //   } else {
-  //     $("header").removeClass("on");
-  //   }
-  // });
-  // Collapse Navbar
+
   var navbarCollapse = function() {
     if ($("header").offset().top > 3) {
       $("header").addClass("navbar-shrink");
