@@ -506,7 +506,7 @@ footer {
 @media screen and (min-width: 300px) and (max-width: 900px) {
   .hero {
     background-color: rgba(43, 62, 80,0.95) ;
-  width: 100%;
+  width: 100% !important;
     height: 40% !important;
   }
   header {
