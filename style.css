@@ -66,6 +66,8 @@ width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 15vh;
+  border-top: 5px solid rgb(36,41,46);
+  border-bottom: 5px solid rgb(36,41,46);
 }
 
 header {
@@ -574,10 +576,7 @@ footer {
     margin-left: 5vw;
     font-size: 14px;
   }
-  .parallax {
-    min-height: 45vh;
-    margin-bottom: 9vh;
-  }
+ 
   #projects-header {
     font-size: 2rem;
     margin-bottom: 4vh;
