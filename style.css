@@ -141,8 +141,8 @@ header.on {
 
 .profile_pic {
     position: relative;
-    height: 12rem;
-    width: 12rem;
+    height: 14rem;
+    width: 14rem;
     align-self: center;
     border-radius: 50%;
     margin: 0 3vw;
@@ -180,7 +180,7 @@ header.on {
 }
 
 #about p {
-    width: 400px;
+    width: 450px;
     letter-spacing: 1px;
     color: rgb(61, 61, 61);
     font-size: 16px;
@@ -651,6 +651,9 @@ footer {
     .left {
         font-size: 1rem !important;
     }
+    #top {
+        height: 61vh;
+    }
     .profile {
         height: auto;
         width: auto;
@@ -688,6 +691,7 @@ footer {
         flex-direction: column;
         align-self: center;
         margin-bottom: 15vh;
+        border: none;
     }
     #about h1 {
         width: 46vw;
@@ -697,6 +701,7 @@ footer {
     }
     #about p {
         width: 80%;
+        margin-top: 3vh;
         margin-left: 5vw;
         font-size: 14px;
     }
