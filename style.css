@@ -130,8 +130,9 @@ header.on {
     font-family: "Quicksand", sans-serif;
     color: white;
     padding: 6px;
-    border-radius: 25px;
+    border-radius: 7px;
     font-weight: 700;
+    padding: 13px;
 }
 
 #menu a:hover {
