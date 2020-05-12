@@ -448,9 +448,6 @@ header.on {
     text-transform: uppercase;
 }
 
-
-/* Style inputs with type="text", select elements and textareas */
-
 .form {
     height: 50px;
     position: relative;
@@ -477,19 +474,12 @@ textarea {
     height: 80px;
     border: 1px solid grey;
     width: 90%;
-    /* Full width */
     padding: 12px;
-    /* Some padding */
     border-radius: 2px;
-    /* Rounded borders */
     box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
     margin-top: 20px;
-    /* Add a top margin */
     margin-bottom: 15px;
-    /* Bottom margin */
     resize: vertical;
-    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 textarea:focus {
