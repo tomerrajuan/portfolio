@@ -10,10 +10,9 @@
   const learn_more_button3 = document.getElementById("learn-more-button3");
   const learn_more_button4 = document.getElementById("learn-more-button4");
   const learn_more_button5 = document.getElementById("learn-more-button5");
-  const welcome = document.getElementById("welcome");
 
 const hero = document.querySelector(".hero");
-const slider = document.querySelector(".slider");
+// const slider = document.querySelector(".slider");
 
 const tl = new TimelineMax();
 
@@ -27,9 +26,7 @@ tl.fromTo(
   1.2,
   {width: "100%"},
   {width: "90%", ease: Power2.easeInOut}
-)
-.fromTo(slider,1.2,{x: "-100%"}, {x: "0", ease: Power2.easeInOut},
-"-=1.2");
+).fromTo(slider, 1.2, {x: "-100%"}, {x: "0", ease: Power2.easeInOut},"-=1.2");
 
 
   learn_more_button1.addEventListener("click", function() {
@@ -71,20 +68,19 @@ tl.fromTo(
     $(".modal-container5").removeClass("on");
   });
 
-  welcome.addEventListener("mouseover", function(event) {
-    var target = $(event.target);
-    var id = target.attr("id");
+  // profile.addEventListener("mouseover", function(event) {
+  //   var target = $(event.target);
+  //   var id = target.attr("id");
 
-    console.log("we are at logo event", id);
-    animateDiv("#" + id);
-  });
+  //   console.log("we are at logo event", id);
+  //   animateDiv("#" + id);
+  // });
 
   $(document).ready(function() {
       console.log("happening");
     $("#my-name").addClass("right");
     $("#full-stack").addClass("left");
-    $("#about").addClass("blue");
-    $(".white").addClass("blue");
+
 
   });
 
