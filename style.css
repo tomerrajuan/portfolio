@@ -4,10 +4,20 @@
     font-family: "Nunito";
 }
 
+.parallax3 {
+    background-image: url("parallax3.jpg");
+    min-height: 450px;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5vh 0;
+}
+
 .hero {
-    background-color: rgba(43, 62, 80, 0.95);
+    background-color: rgb(19, 19, 19);
     width: 100%;
-    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +73,7 @@
 }
 
 .parallax {
-    background-image: url("building.jpg");
+    background-image: url("parallax2.jpg");
     min-height: 500px;
     opacity: 0.8;
     background-attachment: fixed;
@@ -620,6 +630,10 @@ footer {
     .parallax {
         margin-bottom: 1vh;
         margin-top: 8vh;
+        min-height: 300px !important;
+    }
+    .parallax3 {
+        min-height: 300px !important;
     }
     .hero {
         background-color: rgba(43, 62, 80, 0.95);
