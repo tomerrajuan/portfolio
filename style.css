@@ -149,6 +149,7 @@ header.on {
 }
 
 #about {
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     height: 70vh;
@@ -194,7 +195,7 @@ header.on {
     color: rgb(61, 61, 61);
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
 }
 
 .project {
@@ -208,7 +209,14 @@ header.on {
     margin-bottom: 8vh;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
 .projects {
+    padding-top: 8vh;
     height: auto;
     width: 90vw;
     display: flex;
@@ -386,7 +394,7 @@ header.on {
 
 #skills {
     height: auto;
-    padding: 10vh 0;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
 }
@@ -425,14 +433,14 @@ header.on {
 /* contact section */
 
 #contact {
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 5%;
     width: 60vw;
     border-radius: 5px;
-    margin: 7vh 20vw;
-    padding: 43px;
+    margin: 0vh 20vw;
 }
 
 .contact :hover {
@@ -440,6 +448,7 @@ header.on {
 }
 
 .contact {
+    padding-top: 5vh;
     text-align: center;
     color: rgba(186, 76, 99, 0.8);
     font-size: 32px;
@@ -572,6 +581,7 @@ footer {
     width: 100vw;
     justify-content: center;
     background-color: rgb(36, 41, 46);
+    margin-top: 11vh;
 }
 
 #fa-va-footer {
@@ -614,12 +624,13 @@ footer {
 
 @media screen and (min-width: 300px) and (max-width: 900px) {
     .parallax {
-        min-height: 300px;
+        margin-bottom: 1vh;
+        margin-top: 8vh;
     }
     .hero {
         background-color: rgba(43, 62, 80, 0.95);
         width: 100% !important;
-        height: 40% !important;
+        height: 80% !important;
     }
     header {
         height: 13vh;
@@ -642,7 +653,7 @@ footer {
         font-size: 1rem !important;
     }
     #top {
-        height: 61vh;
+        height: 40vh;
     }
     .profile {
         height: auto;
@@ -665,10 +676,11 @@ footer {
         height: 40vh;
     }
     #skills {
-        padding: 3vh 0;
+        padding-top: 8vh;
     }
     #about {
-        height: 500px;
+        padding-top: 12vh;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
@@ -680,7 +692,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-self: center;
-        margin-bottom: 15vh;
         border: none;
     }
     #about h1 {
