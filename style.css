@@ -327,13 +327,26 @@ header.on {
 .modal-container-content button {
     align-self: flex-end;
     width: 44px;
-    font-size: 25px;
+    font-size: 18px;
     border-radius: 5px;
     position: absolute;
     z-index: 200;
     border: 1px solid rgb(36, 41, 46);
     cursor: pointer;
     box-shadow: 1px 1px 1px;
+    outline: none;
+}
+
+.modal-container-content button:active {
+    margin-top: 1px;
+    margin-left: 2px;
+}
+
+.site-link {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: -3px;
+    color: rgba(186, 76, 99, 0.9) !important;
 }
 
 .modal-container-content h1 {
@@ -633,6 +646,13 @@ footer {
 /* Footer  end */
 
 @media screen and (min-width: 300px) and (max-width: 900px) {
+    .modal-container1.on,
+    .modal-container2.on,
+    .modal-container3.on,
+    .modal-container4.on,
+    .modal-container5.on {
+        visibility: hidden;
+    }
     .parallax {
         margin-bottom: 1vh;
         margin-top: 8vh;
