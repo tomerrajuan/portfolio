@@ -135,14 +135,14 @@ header.on {
     justify-content: space-between;
     letter-spacing: 2px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 17px;
     padding-top: 10px;
     font-family: "Quicksand", sans-serif;
     color: white;
     padding: 6px;
     border-radius: 7px;
     font-weight: 700;
-    padding: 13px;
+    padding: 9px;
 }
 
 #menu a:hover {
