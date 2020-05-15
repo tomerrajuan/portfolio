@@ -33,67 +33,53 @@
     flex-direction: column;
     padding: 10px;
     border-radius: 15px;
-}
-
-.modal-container-content button {
-    align-self: flex-end;
-    width: 44px;
-    font-size: 18px;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 200;
-    border: 1px solid rgb(36, 41, 46);
-    cursor: pointer;
-    box-shadow: 1px 1px 1px;
-    outline: none;
-}
-
-.modal-container-content button:active {
-    margin-top: 1px;
-    margin-left: 2px;
-}
-
-.site-link {
-    text-decoration: none;
-    margin-left: 5px;
-    margin-top: -3px;
-    color: rgba(186, 76, 99, 0.9) !important;
-}
-
-.modal-container-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2.5vh;
-    width: 30vw;
-    align-self: center;
-}
-
-.modal-container-text {
-    margin-top: 3vh;
-    font-size: 19px;
-    width: 80%;
-    text-align: left;
-    margin-left: 10%;
-}
-
-.modal-container-content h3 {
-    margin-top: 2vh;
-    font-size: 19px;
-}
-
-.modal-container-content p {
-    font-size: 1rem;
-    margin-bottom: 1vh;
-}
-
-.modal-container-content h4 {
-    font-size: 1rem;
-    margin-bottom: 1vh;
-    align-self: center;
-    text-align: center;
-}
-
-.modal-container-content a {
-    color: rgb(36, 41, 46);
+    button {
+        align-self: flex-end;
+        width: 44px;
+        font-size: 18px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 200;
+        border: 1px solid rgb(36, 41, 46);
+        cursor: pointer;
+        box-shadow: 1px 1px 1px;
+        outline: none;
+        &:active {
+            margin-top: 1px;
+            margin-left: 2px;
+        }
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5vh;
+        width: 30vw;
+        align-self: center;
+    }
+    h3 {
+        margin-top: 2vh;
+        font-size: 19px;
+    }
+    p {
+        font-size: 1rem;
+        margin-bottom: 1vh;
+    }
+    h4 {
+        font-size: 1rem;
+        margin-bottom: 1vh;
+        align-self: center;
+        text-align: center;
+    }
+    a {
+        color: rgb(36, 41, 46);
+    }
+    img {
+        object-fit: fill;
+        border: 4px solid rgb(36, 41, 46);
+        height: 38%;
+        width: 37%;
+        align-self: center;
+        border-radius: 15px;
+    }
 }
 
 .fa-github:before {
@@ -103,19 +89,25 @@
     margin-left: 15px;
 }
 
-.modal-container-content img {
-    object-fit: fill;
-    border: 4px solid rgb(36, 41, 46);
-    height: 38%;
-    width: 37%;
-    align-self: center;
-    border-radius: 15px;
-}
-
 .github {
     position: absolute;
     justify-content: center;
     align-self: center;
     display: flex;
     bottom: 6vh;
+}
+
+.site-link {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: -3px;
+    color: rgba(186, 76, 99, 0.9) !important;
+}
+
+.modal-container-text {
+    margin-top: 3vh;
+    font-size: 19px;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
 }

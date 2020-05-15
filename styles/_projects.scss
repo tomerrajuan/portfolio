@@ -11,15 +11,14 @@
     align-self: center;
 }
 
-#projects h2 {
-    font-size: 4rem;
-    margin-bottom: 8vh;
-}
-
 #projects {
     display: flex;
     flex-direction: column;
     padding-top: 10vh;
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 8vh;
+    }
 }
 
 .projects {
@@ -56,6 +55,17 @@
     background-color: rgba(186, 76, 99, 0.9);
     opacity: 0;
     border: 1px solid rgb(61, 61, 61);
+    i {
+        cursor: pointer;
+        padding: 3px 10px;
+        font-size: 60px;
+        align-self: center;
+        color: white;
+        &:hover {
+            font-size: 70px;
+            color: rgba(43, 62, 80, 0.9);
+        }
+    }
 }
 
 .image_container:hover .learn-more {
@@ -63,17 +73,4 @@
     opacity: 1;
     position: relative;
     transition-duration: 0.6s;
-}
-
-.learn-more i {
-    cursor: pointer;
-    padding: 3px 10px;
-    font-size: 60px;
-    align-self: center;
-    color: white;
-}
-
-.learn-more i:hover {
-    font-size: 70px;
-    color: rgba(43, 62, 80, 0.9);
 }

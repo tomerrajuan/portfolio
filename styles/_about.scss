@@ -26,6 +26,23 @@
     height: 80vh;
     width: 100vw;
     align-items: center;
+    p {
+        width: 450px;
+        letter-spacing: 1px;
+        color: rgb(61, 61, 61);
+        font-size: 16px;
+        align-self: center;
+    }
+    h1 {
+        width: 20vw;
+        margin-left: 10vw;
+        text-align: center;
+        border-bottom: 2px solid rgb(61, 61, 61);
+        color: rgb(61, 61, 61);
+        font-size: 2.5rem;
+        margin-top: 4vh;
+        letter-spacing: 3px;
+    }
 }
 
 .about-box {
@@ -38,23 +55,4 @@
     display: flex;
     border: 2px solid;
     border-radius: 5px;
-}
-
-#about h1 {
-    width: 20vw;
-    margin-left: 10vw;
-    text-align: center;
-    border-bottom: 2px solid rgb(61, 61, 61);
-    color: rgb(61, 61, 61);
-    font-size: 2.5rem;
-    margin-top: 4vh;
-    letter-spacing: 3px;
-}
-
-#about p {
-    width: 450px;
-    letter-spacing: 1px;
-    color: rgb(61, 61, 61);
-    font-size: 16px;
-    align-self: center;
 }
