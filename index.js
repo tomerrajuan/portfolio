@@ -10,6 +10,13 @@
     const learn_more_button3 = document.getElementById("learn-more-button3");
     const learn_more_button4 = document.getElementById("learn-more-button4");
     const learn_more_button5 = document.getElementById("learn-more-button5");
+    const project_img1 = document.getElementById("project_img1");
+    const project_img2 = document.getElementById("project_img2");
+    const project_img3 = document.getElementById("project_img3");
+    const project_img4 = document.getElementById("project_img4");
+    const project_img5 = document.getElementById("project_img5");
+
+
 
     const hero = document.querySelector(".hero");
     // const slider = document.querySelector(".slider");
@@ -64,20 +71,11 @@
         $(".modal-container5").removeClass("on");
     });
 
-    // profile.addEventListener("mouseover", function(event) {
-    //   var target = $(event.target);
-    //   var id = target.attr("id");
-
-    //   console.log("we are at logo event", id);
-    //   animateDiv("#" + id);
-    // });
 
     $(document).ready(function() {
         console.log("happening");
         $("#my-name").addClass("right");
         $("#full-stack").addClass("left");
-
-
     });
 
     var i = 0;
@@ -121,4 +119,28 @@
             }
         });
     });
+    if (screen.width <= 900) {
+
+        project_img1.addEventListener("click", function() {
+            console.log("we are here");
+            $(".modal-container1").addClass("on");
+        });
+        project_img2.addEventListener("click", function() {
+            $(".modal-container2").addClass("on");
+        });
+        project_img3.addEventListener("click", function() {
+            $(".modal-container3").addClass("on");
+        });
+        project_img4.addEventListener("click", function() {
+            $(".modal-container4").addClass("on");
+        });
+        project_img5.addEventListener("click", function() {
+            $(".modal-container5").addClass("on");
+        });
+
+    }
+
+
+
+
 })();

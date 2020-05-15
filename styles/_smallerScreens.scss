@@ -1,11 +1,4 @@
 @media screen and (min-width: 300px) and (max-width: 900px) {
-    .modal-container1.on,
-    .modal-container2.on,
-    .modal-container3.on,
-    .modal-container4.on,
-    .modal-container5.on {
-        visibility: hidden;
-    }
     .parallax {
         margin-bottom: 1vh;
         margin-top: 8vh;
@@ -97,7 +90,11 @@
         font-size: 2rem;
         margin-bottom: 4vh;
     }
-    #project_img {
+    #project_img1,
+    #project_img2,
+    #project_img3,
+    #project_img4,
+    #project_img5 {
         margin: 2vh 0;
         height: 25vh;
         width: auto;
@@ -124,6 +121,56 @@
         margin-bottom: 5vh;
         width: 90vw;
         margin-left: 7vw;
+    }
+    .modal-container-content {
+        border-radius: 4px;
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            width: 80%;
+        }
+        h3 {
+            margin-top: 0;
+            font-size: 15px;
+            border-radius: 2px;
+            padding: 5px;
+            text-align: center;
+        }
+        p {
+            font-size: 13px;
+            border-radius: 2px;
+            overflow: scroll;
+            border: 1px solid;
+            padding: 5px;
+            height: 100px;
+            margin-top: -3vh;
+        }
+        img {
+            height: 25%;
+            width: auto;
+        }
+        button {
+            width: 27px;
+            font-size: 15px;
+        }
+    }
+    .modal-container-text {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .modal-container1.on,
+    .modal-container2.on,
+    .modal-container3.on,
+    .modal-container4.on,
+    .modal-container5.on {
+        visibility: visible !important;
+    }
+    .modal-container1,
+    .modal-container2,
+    .modal-container3,
+    .modal-container4,
+    .modal-container5 {
+        visibility: hidden !important;
     }
 }
 
