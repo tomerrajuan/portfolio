@@ -236,8 +236,8 @@ header .on {
   height: 200px;
   width: auto;
   margin: 15px;
-  -webkit-box-shadow: 2px 2px 2px;
-          box-shadow: 2px 2px 2px;
+  -webkit-box-shadow: 1px 1px 10px;
+          box-shadow: 1px 1px 10px;
 }
 
 .learn-more {
@@ -876,6 +876,8 @@ footer {
     margin: 2vh 0;
     height: 25vh;
     width: auto;
+    -webkit-box-shadow: 1px 1px 10px !important;
+            box-shadow: 1px 1px 10px !important;
   }
   #fa-va-footer {
     margin-left: 0;
