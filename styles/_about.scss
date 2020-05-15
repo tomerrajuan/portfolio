@@ -1,0 +1,60 @@
+.parallax {
+    background-image: url("parallax2.jpg");
+    min-height: 500px;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15vh;
+    opacity: 0.9;
+}
+
+.profile_pic {
+    position: relative;
+    height: 14rem;
+    width: 14rem;
+    align-self: center;
+    border-radius: 50%;
+    margin: 0 3vw;
+}
+
+#about {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.about-box {
+    width: 800px;
+    height: 40vh;
+    justify-content: center;
+    background: white;
+    margin-top: 12vh;
+    border-radius: 3px;
+    display: flex;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#about h1 {
+    width: 20vw;
+    margin-left: 10vw;
+    text-align: center;
+    border-bottom: 2px solid rgb(61, 61, 61);
+    color: rgb(61, 61, 61);
+    font-size: 2.5rem;
+    margin-top: 4vh;
+    letter-spacing: 3px;
+}
+
+#about p {
+    width: 450px;
+    letter-spacing: 1px;
+    color: rgb(61, 61, 61);
+    font-size: 16px;
+    align-self: center;
+}

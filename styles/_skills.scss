@@ -1,0 +1,38 @@
+/* section skills */
+
+#skills {
+    height: auto;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills-header {
+    color: rgb(61, 61, 61);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.skills-flex {
+    justify-content: center;
+    align-self: center;
+}
+
+.skills-flex-item {
+    text-align: center;
+    width: 40vw;
+    margin: 6vh 0;
+}
+
+.skills-flex-item h3 {
+    margin: 5px 0;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid grey;
+}
+
+.skills-flex-item p {
+    margin: 2vh 0;
+}
+
+
+/* end skills section */

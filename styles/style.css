@@ -573,13 +573,115 @@ textarea:focus {
           box-shadow: inset 1px 1px 1px #dfdfdf;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  font-family: "Nunito";
+/* Footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 260px;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #24292e;
+  margin-top: 11vh;
 }
 
+#fa-va-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  margin-left: 200px;
+}
+
+#fa-va-footer h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 40px;
+}
+
+#fa-va-footer p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 40px;
+  font-size: 24px;
+}
+
+#fa-va-footer i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 65px;
+  color: white;
+}
+
+#fa-va-footer img:hover {
+  margin-top: -1vh;
+}
+
+#fa-va-footer i:hover {
+  margin-top: -1vh;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Footer  end */
+/* section skills */
+#skills {
+  height: auto;
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#skills-header {
+  color: #3d3d3d;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.skills-flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.skills-flex-item {
+  text-align: center;
+  width: 40vw;
+  margin: 6vh 0;
+}
+
+.skills-flex-item h3 {
+  margin: 5px 0;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid grey;
+}
+
+.skills-flex-item p {
+  margin: 2vh 0;
+}
+
+/* end skills section */
 .parallax {
   background-image: url("parallax2.jpg");
   min-height: 500px;
@@ -656,115 +758,6 @@ textarea:focus {
       align-self: center;
 }
 
-/* section skills */
-#skills {
-  height: auto;
-  padding-top: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#skills-header {
-  color: #3d3d3d;
-  font-size: 3rem;
-  text-align: center;
-}
-
-.skills-flex {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.skills-flex-item {
-  text-align: center;
-  width: 40vw;
-  margin: 6vh 0;
-}
-
-.skills-flex-item h3 {
-  margin: 5px 0;
-  padding-bottom: 1vh;
-  border-bottom: 1px solid grey;
-}
-
-.skills-flex-item p {
-  margin: 2vh 0;
-}
-
-/* end skills section */
-/* Footer */
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 260px;
-  width: 100vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #24292e;
-  margin-top: 11vh;
-}
-
-#fa-va-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-  margin-left: 200px;
-}
-
-#fa-va-footer h1 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-right: 40px;
-}
-
-#fa-va-footer p {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 0 40px;
-  font-size: 24px;
-}
-
-#fa-va-footer i {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 65px;
-  color: white;
-}
-
-#fa-va-footer img:hover {
-  margin-top: -1vh;
-}
-
-#fa-va-footer i:hover {
-  margin-top: -1vh;
-}
-
-.footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* Footer  end */
 @media screen and (min-width: 300px) and (max-width: 900px) {
   .modal-container1.on,
   .modal-container2.on,
@@ -933,5 +926,12 @@ footer {
   .left {
     font-size: 1rem !important;
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Nunito";
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 100vw;
+    justify-content: center;
+    background-color: rgb(36, 41, 46);
+    margin-top: 11vh;
+}
+
+#fa-va-footer {
+    display: flex;
+    color: white;
+    margin-left: 200px;
+}
+
+#fa-va-footer h1 {
+    align-self: center;
+    margin-right: 40px;
+}
+
+#fa-va-footer p {
+    align-self: center;
+    margin: 0 40px;
+    font-size: 24px;
+}
+
+#fa-va-footer i {
+    align-self: center;
+    font-size: 65px;
+    color: white;
+}
+
+#fa-va-footer img:hover {
+    margin-top: -1vh;
+}
+
+#fa-va-footer i:hover {
+    margin-top: -1vh;
+}
+
+.footer-links {
+    display: flex;
+}
+
+
+/* Footer  end */
