@@ -1,0 +1,79 @@
+#projects-header {
+    color: rgb(61, 61, 61);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#projects h2 {
+    font-size: 4rem;
+    margin-bottom: 8vh;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+.projects {
+    padding-top: 8vh;
+    height: auto;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    justify-content: space-evenly;
+    text-align: center;
+    color: rgb(61, 61, 61);
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+
+#project_img {
+    object-fit: fill;
+    height: 200px;
+    width: auto;
+    margin: 15px;
+    box-shadow: 2px 2px 2px;
+}
+
+.learn-more {
+    text-align: center;
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    width: 370px;
+    margin-top: -221px;
+    height: 201px;
+    background-color: rgba(186, 76, 99, 0.9);
+    opacity: 0;
+    border: 1px solid rgb(61, 61, 61);
+}
+
+.image_container:hover .learn-more {
+    z-index: 11;
+    opacity: 1;
+    position: relative;
+    transition-duration: 0.6s;
+}
+
+.learn-more i {
+    cursor: pointer;
+    padding: 3px 10px;
+    font-size: 60px;
+    align-self: center;
+    color: white;
+}
+
+.learn-more i:hover {
+    font-size: 70px;
+    color: rgba(43, 62, 80, 0.9);
+}

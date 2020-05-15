@@ -1,0 +1,72 @@
+.parallax3 {
+    background-image: url("welcome_image.jpg");
+    min-height: 450px;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5vh 0;
+}
+
+.hero {
+    background-color: rgb(19, 19, 19);
+    background-image: url("welcome_image.jpg");
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#top {
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+#my-name,
+#full-stack {
+    color: white;
+    font-size: 1px;
+    opacity: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.right {
+    opacity: 1 !important;
+    font-size: 3.5rem !important;
+    transition-duration: 4s;
+}
+
+.left {
+    transition-duration: 4s;
+    font-size: 1.8rem !important;
+    opacity: 1 !important;
+}
