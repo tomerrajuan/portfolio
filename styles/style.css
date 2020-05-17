@@ -389,7 +389,7 @@ header .on {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    border-radius: 15px;
+    border-radius: 6px;
 }
 
 .fa-github:before {
