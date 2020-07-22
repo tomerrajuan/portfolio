@@ -2,112 +2,115 @@
 .modal-container2,
 .modal-container3,
 .modal-container4,
-.modal-container5 {
-    position: fixed;
-    z-index: 50;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
+.modal-container5,
+.modal-container6 {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
 }
 
 .modal-container1.on,
 .modal-container2.on,
 .modal-container3.on,
 .modal-container4.on,
-.modal-container5.on {
-    visibility: visible;
+.modal-container5.on,
+.modal-container5.on,
+.modal-container6.on {
+  visibility: visible;
 }
 
 .modal-container-content {
-    width: 80vw;
-    height: 90vh;
-    background: white;
+  width: 80vw;
+  height: 90vh;
+  background: white;
+  align-self: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 15px;
+  button {
+    align-self: flex-end;
+    width: 44px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 200;
+    border: 1px solid rgb(36, 41, 46);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px;
+    outline: none;
+    &:active {
+      margin-top: 1px;
+      margin-left: 2px;
+    }
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5vh;
+    width: 30vw;
     align-self: center;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  }
+  h3 {
+    margin-top: 2vh;
+    font-size: 19px;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1vh;
+  }
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 1vh;
+    align-self: center;
+    text-align: center;
+  }
+  a {
+    color: rgb(36, 41, 46);
+  }
+  img {
+    object-fit: fill;
+    border: 4px solid rgb(36, 41, 46);
+    height: auto;
+    width: 54%;
+    align-self: center;
     border-radius: 15px;
-    button {
-        align-self: flex-end;
-        width: 44px;
-        font-size: 18px;
-        border-radius: 5px;
-        position: absolute;
-        z-index: 200;
-        border: 1px solid rgb(36, 41, 46);
-        cursor: pointer;
-        box-shadow: 1px 1px 1px;
-        outline: none;
-        &:active {
-            margin-top: 1px;
-            margin-left: 2px;
-        }
-    }
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2.5vh;
-        width: 30vw;
-        align-self: center;
-    }
-    h3 {
-        margin-top: 2vh;
-        font-size: 19px;
-    }
-    p {
-        font-size: 1rem;
-        margin-bottom: 1vh;
-    }
-    h4 {
-        font-size: 1rem;
-        margin-bottom: 1vh;
-        align-self: center;
-        text-align: center;
-    }
-    a {
-        color: rgb(36, 41, 46);
-    }
-    img {
-        object-fit: fill;
-        border: 4px solid rgb(36, 41, 46);
-        height: auto;
-        width: 54%;
-        align-self: center;
-        border-radius: 15px;
-    }
+  }
 }
 
 .fa-github:before {
-    content: "\f09b";
-    font-size: 35px;
-    text-align: center;
-    margin-left: 15px;
+  content: "\f09b";
+  font-size: 35px;
+  text-align: center;
+  margin-left: 15px;
 }
 
 .github {
-    position: absolute;
-    justify-content: center;
-    align-self: center;
-    display: flex;
-    bottom: 6vh;
+  position: absolute;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  bottom: 6vh;
 }
 
 .site-link {
-    text-decoration: none;
-    margin-left: 5px;
-    margin-top: -3px;
-    color: rgba(186, 76, 99, 0.9) !important;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-top: -3px;
+  color: rgba(186, 76, 99, 0.9) !important;
 }
 
 .modal-container-text {
-    margin-top: 3vh;
-    font-size: 19px;
-    width: 80%;
-    text-align: left;
-    margin-left: 10%;
+  margin-top: 3vh;
+  font-size: 19px;
+  width: 80%;
+  text-align: left;
+  margin-left: 10%;
 }

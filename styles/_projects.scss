@@ -1,84 +1,85 @@
-@mixin flexName ($direction) {
-    display: flex;
-    align-self: center;
-    flex-direction: $direction;
+@mixin flexName($direction) {
+  display: flex;
+  align-self: center;
+  flex-direction: $direction;
 }
 
 #projects-header {
-    color: rgb(61, 61, 61);
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 2vh;
+  color: rgb(61, 61, 61);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2vh;
 }
 
 .project {
-    @include flexName(column);
+  @include flexName(column);
 }
 
 #projects {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10vh;
-    h2 {
-        font-size: 4rem;
-        margin-bottom: 8vh;
-    }
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 8vh;
+  }
 }
 
 .projects {
-    padding-top: 8vh;
-    height: auto;
-    width: 90vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 4;
-    justify-content: space-evenly;
-    text-align: center;
-    color: rgb(61, 61, 61);
-    margin-left: 5vw;
-    margin-bottom: 10vh;
-    justify-content: center;
+  padding-top: 8vh;
+  height: auto;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 4;
+  justify-content: space-evenly;
+  text-align: center;
+  color: rgb(61, 61, 61);
+  margin-left: 5vw;
+  margin-bottom: 10vh;
+  justify-content: center;
 }
 
 #project_img1,
 #project_img2,
 #project_img3,
 #project_img4,
-#project_img5 {
-    object-fit: fill;
-    height: 200px;
-    width: auto;
-    margin: 15px;
-    box-shadow: 1px 1px 10px;
+#project_img5,
+#project_img6 {
+  object-fit: fill;
+  height: 200px;
+  width: auto;
+  margin: 15px;
+  box-shadow: 1px 1px 10px;
 }
 
 .learn-more {
-    text-align: center;
-    display: flex;
-    margin: 15px;
-    justify-content: center;
-    width: 370px;
-    margin-top: -221px;
-    height: 201px;
-    background-color: rgba(186, 76, 99, 0.9);
-    opacity: 0;
-    border: 1px solid rgb(61, 61, 61);
-    i {
-        cursor: pointer;
-        padding: 3px 10px;
-        font-size: 60px;
-        align-self: center;
-        color: white;
-        &:hover {
-            font-size: 70px;
-            color: rgba(43, 62, 80, 0.9);
-        }
+  text-align: center;
+  display: flex;
+  margin: 15px;
+  justify-content: center;
+  width: 370px;
+  margin-top: -221px;
+  height: 201px;
+  background-color: rgba(186, 76, 99, 0.9);
+  opacity: 0;
+  border: 1px solid rgb(61, 61, 61);
+  i {
+    cursor: pointer;
+    padding: 3px 10px;
+    font-size: 60px;
+    align-self: center;
+    color: white;
+    &:hover {
+      font-size: 70px;
+      color: rgba(43, 62, 80, 0.9);
     }
+  }
 }
 
 .image_container:hover .learn-more {
-    z-index: 11;
-    opacity: 1;
-    position: relative;
-    transition-duration: 0.6s;
+  z-index: 11;
+  opacity: 1;
+  position: relative;
+  transition-duration: 0.6s;
 }
